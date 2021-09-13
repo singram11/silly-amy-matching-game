@@ -12,7 +12,8 @@ function App() {
       <header className="App-header">
        Silly Amy Game!
       </header>
-      <PlayButton setIsPlay={setIsPlay}/>
+      {isPlay ? "gameboard" : <PlayButton setIsPlay={setIsPlay}/> }
+      
     </div>
   );
 }
