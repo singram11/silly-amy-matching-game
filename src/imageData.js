@@ -11,6 +11,12 @@ const images = [
     {"imgName": "cat3", "img": cat3},
     {"imgName": "cat4", "img": cat4},
     {"imgName": "cat5", "img": cat5},
+    {"imgName": "cat6", "img": cat6},
+    {"imgName": "cat1", "img": cat1 },
+    {"imgName": "cat2", "img": cat2 },
+    {"imgName": "cat3", "img": cat3},
+    {"imgName": "cat4", "img": cat4},
+    {"imgName": "cat5", "img": cat5},
     {"imgName": "cat6", "img": cat6}
 ]
 
