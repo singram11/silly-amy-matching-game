@@ -1,8 +1,8 @@
 
 
-function Card(){
+function Card(props){
 
-    return "card"
+    return <div className={props.className}><img src={props.imgSrc}/></div>
 }
 
 export default Card;
