@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react"
 import images from "./imageData"
 import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 import Card from "./Card"
 
 function Gameboard(props){
@@ -18,7 +19,7 @@ function Gameboard(props){
     
         console.log(cardArr)
 
-    return <Container><div>{cardArr}</div></Container>
+    return <Container><Row><div>{cardArr}</div></Row></Container>
 }
 
 export default Gameboard;
