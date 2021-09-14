@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import './App.css';
 import PlayButton from './PlayButton'
-import Gameboard from './Gameboard'
+import Game from './Game'
 
 function App() {
 
@@ -13,7 +13,7 @@ function App() {
       <header className="App-header">
        Silly Amy Game!
       </header>
-      {isPlay ? <Gameboard/> : <PlayButton setIsPlay={setIsPlay}/> }
+      {isPlay ? <Game/> : <PlayButton setIsPlay={setIsPlay}/> }
       
     </div>
   );

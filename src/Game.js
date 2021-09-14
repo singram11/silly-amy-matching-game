@@ -1,7 +1,12 @@
 
-function Game(){
+import Container from 'react-bootstrap/Container';
+import GameControls from './GameControls';
+import Gameboard from './Gameboard';
 
-    return "Game"
+
+function Game(props){
+
+    return <Container><GameControls/><Gameboard/> </Container>
 }
 
 export default Game;

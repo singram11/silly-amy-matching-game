@@ -1,5 +1,5 @@
 
-function GameContols(){
+function GameControls(){
 
     return "gamecontrols"
 }
