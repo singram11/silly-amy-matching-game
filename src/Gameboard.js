@@ -6,33 +6,56 @@ import Card from "./Card"
 
 function Gameboard(props){
 
-    const [ numberFlipped, setNumberFlipped ] = useState(0)
-    const [ card1, setCard1 ] = useState(null)
-    const [ card2, setCard2 ] = useState(null)
+   const [cardsFaceUp, setCardsFaceUp] = useState([])
+   const [cardsMatched, setCardsMatched] = useState([])
+   const [cardDeck, setCardDeck] = useState()
 
-    let cardArr = []
-    for (const image in images) {
-        
+    console.log("type of cardsFaceUp:")
+   console.log(typeof(cardsFaceUp))
+   console.log("value of: ")
+   console.log(cardsFaceUp)
+   console.log(cardsFaceUp.includes(1))
+   
+   
+   let cardArr = images.map((image, index) => {
+       console.log(image["id"])
         const card = <Card
-        key={image}
-        className={images[image]["imgName"]}
-        imgSrc = {images[image]["img"]}/>
-        
-        cardArr.push(card)
-    }
+        key={image["id"]}  // what is the best thing to use if you dont have an id?
+        onClick={ () => setCardsFaceUp([ ...cardsFaceUp, image["id"] ])}
+        isFaceUp = { cardsFaceUp.includes(image["id"]) || cardsMatched.includes(index) }
+        className={image["imgName"]}
+        imgSrc = {image["img"]}
+        />
+
+        return card
+   })
+   console.log("Done with setting cards")
+   
+   useEffect(()=> {
     //shuffle arrray
     let shuffledCardArr = cardArr
         .map((value) => ({value, sort: Math.random() }))
         .sort((a,b) => a.sort - b.sort)
         .map(({value}) => value)
 
-    function checkMatch(numberFlipped, card1, card2) {
+    }, [])
 
-        
-    }
+  
+    useEffect(()=> {
+        // console.log(cardsFaceUp)
+        if (cardsFaceUp.length === 2){
+            const { idxCard1, idxCard2 } = cardsFaceUp
+            // need to get class
+            if (idxCard1 === idxCard2) {
+                setCardsMatched(idxCard1, idxCard2)
+            }
+            setCardsFaceUp([])
+        } 
+
+    }, [cardsFaceUp])
     
 
-    return <Container><Row><div>{shuffledCardArr}</div></Row></Container>
+    return <Container><Row><div>{cardArr}</div></Row></Container>
 }
 
 export default Gameboard;
