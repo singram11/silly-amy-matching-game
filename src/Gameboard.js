@@ -45,13 +45,13 @@ function Gameboard(props){
             if (card1 === card2) {
                 setCardsMatched([...cardsMatched, idxCard1, idxCard2])
             } 
-            setCardsFaceUp([])
+            setTimeout(() => {setCardsFaceUp([])}, 1000);
         } 
 
     }, [cardsFaceUp])
     
 
-    return <Container><Row><div>{cardArr}</div></Row></Container>
+    return <Container><Row>{cardArr}</Row></Container>
 }
 
 export default Gameboard;
