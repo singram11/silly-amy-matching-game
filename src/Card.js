@@ -7,17 +7,24 @@ function Card(props){
 
     const isFaceUp = props.isFaceUp
 
-    const showClass = isFaceUp ? 'side flip front' : "side back"
-
-    const divClasses = `${props.className} inner-card`
+    
+    const active = isFaceUp ? 'active' : ""
+ 
+    const divClasses = `${props.className} card ${active}`
+    const frontClasses = "side front"
+    const backClasses = "side back"
   
 
-    return <Col className="mb-3 outer-card">
+    return (
+    <Col className="mb-3">
+    <div className="scene">
         <div className={divClasses} onClick={props.onClick}> 
-            {isFaceUp ? <img className={showClass} src={props.imgSrc} height="100"/> 
-            : <img className={showClass} src={questionMark} height="100"/>} 
+            <img className={frontClasses} src={props.imgSrc} height="100"/> 
+            <img className={backClasses} src={questionMark} height="100"/>
             </div>
-        </Col>
+            </div>
+    </Col>
+        )
 }
 
 export default Card;
