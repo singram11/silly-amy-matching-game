@@ -25,6 +25,7 @@ function Gameboard(props){
         isFaceUp = { cardsFaceUp.includes(index) || cardsMatched.includes(index) }
         className={image["imgName"]}
         imgSrc = {image["img"]}
+        alt = {image["alt"]}
         />
 
         return card
