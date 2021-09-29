@@ -11,7 +11,7 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
         monospace;
 }
-
+/* Card Animation */
 .card.col {
     border: none;
 }
@@ -43,4 +43,10 @@ code {
 
 .card.active {
     transform: rotateY(180deg);
+}
+/* Card Animation End */
+
+.header {
+    color: #fff;
+    text-align: center;
 }
