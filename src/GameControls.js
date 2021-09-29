@@ -1,9 +1,20 @@
 import Button from 'react-bootstrap/Button';
 
-function GameControls(){
+function GameControls(props){
+    // const restartGame = props.restartGame
+
+    // function restart() {
+    //     console.log("clicked")
+    //     restartGame(true)
+    // }
+
+    function restart() {
+        window.location.reload()
+    }
+
 
     return <div className="game-control-section"> 
-    <Button variant="primary">Restart</Button> 
+    <Button onClick={restart} variant="primary">Restart</Button> 
     </div>
 }
 
