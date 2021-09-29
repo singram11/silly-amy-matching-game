@@ -13,8 +13,7 @@ import {
 
 function App() {
 
-  const [isPlay, setIsPlay] = useState(false)
-
+ 
   return (
     <div className="App">
      <Header/>
@@ -28,7 +27,6 @@ function App() {
           </Route>
         </Switch>
       </Router>
-      {/* {isPlay ? <Game/> : <PlayButton setIsPlay={setIsPlay}/> } */}
       
     </div>
   );
