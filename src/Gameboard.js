@@ -16,12 +16,17 @@ function Gameboard(props){
 //    console.log("value of: ")
 //    console.log(cardsFaceUp)
 //    console.log(cardsFaceUp.includes(1))
-   
+   function checkFaceUp(index) {
+       if (!cardsFaceUp.includes(index)) {
+           setCardsFaceUp([...cardsFaceUp, index])
+       }
+   }
+
    
    let cardArr = deck.map((image, index) => {
         const card = <Card
         key={image["id"]}  // what is the best thing to use if you dont have an id?
-        onClick={ () => setCardsFaceUp([ ...cardsFaceUp, index ])}
+        onClick={ () => checkFaceUp(index)}
         isFaceUp = { cardsFaceUp.includes(index) || cardsMatched.includes(index) }
         className={image["imgName"]}
         imgSrc = {image["img"]}
