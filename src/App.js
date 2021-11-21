@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import './App.css';
-import PlayButton from './PlayButton'
+import HompageOptions from './homepageOptions'
 import Game from './Game'
 import Header from './Header'
 import {
@@ -23,7 +23,7 @@ function App() {
             <Game/>
           </Route>
           <Route path ="/">
-            <PlayButton/>
+            <HompageOptions/>
           </Route>
         </Switch>
       </Router>

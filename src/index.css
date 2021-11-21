@@ -67,3 +67,9 @@ img.front {
     color: #fff;
     text-align: center;
 }
+
+/* Homepage Option Styling */
+
+.options {
+    width: 300px;
+}
