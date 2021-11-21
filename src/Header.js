@@ -6,7 +6,8 @@ function Header(){
 
     return <Navbar bg="dark" variant="dark">
  
-        <Container className="header"> Silly Amy Matching Game </Container>
+        <Container className="header"> 
+        <Navbar.Brand href="/"> Silly Amy Matching Game </Navbar.Brand></Container>
   
         </Navbar>
 

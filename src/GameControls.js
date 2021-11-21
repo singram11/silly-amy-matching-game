@@ -13,7 +13,7 @@ function GameControls(props){
     }
 
 
-    return <div className="game-control-section"> 
+    return <div className="game-controls mt-2 mb-3"> 
     <Button onClick={restart} variant="primary">Restart</Button> 
     </div>
 }
