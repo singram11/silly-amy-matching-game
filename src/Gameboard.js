@@ -9,6 +9,7 @@ function Gameboard(props){
 
    const [cardsFaceUp, setCardsFaceUp] = useState([])
    const [cardsMatched, setCardsMatched] = useState([])
+   const [gameWon, setGameWon] = useState(false)
 
 
 //     console.log("type of cardsFaceUp:")
@@ -35,10 +36,11 @@ function Gameboard(props){
 
         return card
    })
-   console.log("Done with setting cards")
-   console.log(images[0].imgName)
+   
+   console.log(`deck len: ${deck.length}`)
+   console.log(`matched len: ${cardsMatched.length}`)
 
-
+   
   
     useEffect(()=> {
         // console.log(cardsFaceUp)
@@ -51,13 +53,29 @@ function Gameboard(props){
             if (card1 === card2) {
                 setCardsMatched([...cardsMatched, idxCard1, idxCard2])
             } 
+            console.log(cardsMatched.length)
+        
+            
             setTimeout(() => {setCardsFaceUp([])}, 1000);
         } 
 
     }, [cardsFaceUp])
+
+    // Check win condition 
+    useEffect(()=> {
+        if (cardsMatched.length == deck.length){
+            setGameWon(true)
+            console.log("won")
+        }
+    }, [cardsMatched])
     
 
-    return <Container><Row>{cardArr}</Row></Container>
+    return <div>
+            <Container>
+                <Row>{cardArr}</Row>
+            </Container>
+            <p>{gameWon ? "yep" : "Nope"}</p>
+            </div>
 }
 
 export default Gameboard;
