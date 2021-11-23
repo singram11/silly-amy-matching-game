@@ -11,6 +11,7 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
         monospace;
 }
+
 /* Card Animation .card.col {
     border: none;
 } */
@@ -69,7 +70,13 @@ img.front {
 }
 
 /* Homepage Option Styling */
-
-.options {
+.homepage {
+    min-height: 90vh;
+}
+.options-card {
     width: 300px;
+    height: 300px;
+    border: 2px solid #cdcdcd;
+    border-radius: 6px;
+    background-color: rgb(205, 205, 205, 0.5);
 }
