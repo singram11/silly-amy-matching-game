@@ -36,12 +36,7 @@ function Gameboard(props){
 
         return card
    })
-   
-   console.log(`deck len: ${deck.length}`)
-   console.log(`matched len: ${cardsMatched.length}`)
-
-   
-  
+     
     useEffect(()=> {
         // console.log(cardsFaceUp)
         if (cardsFaceUp.length === 2){
@@ -63,9 +58,9 @@ function Gameboard(props){
 
     // Check win condition 
     useEffect(()=> {
-        if (cardsMatched.length == deck.length){
+        if (cardsMatched.length === deck.length){
             setGameWon(true)
-            console.log("won")
+            
         }
     }, [cardsMatched])
     
@@ -74,7 +69,7 @@ function Gameboard(props){
             <Container>
                 <Row>{cardArr}</Row>
             </Container>
-            <p>{gameWon ? "yep" : "Nope"}</p>
+            <p>{gameWon ? "You win" : ""}</p>
             </div>
 }
 
