@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/silly-amy-matching-game/static/css/main.b6df9086.chunk.css",
-    "main.js": "/silly-amy-matching-game/static/js/main.f9c57ad1.chunk.js",
-    "main.js.map": "/silly-amy-matching-game/static/js/main.f9c57ad1.chunk.js.map",
+    "main.js": "/silly-amy-matching-game/static/js/main.22749d21.chunk.js",
+    "main.js.map": "/silly-amy-matching-game/static/js/main.22749d21.chunk.js.map",
     "runtime-main.js": "/silly-amy-matching-game/static/js/runtime-main.b23df796.js",
     "runtime-main.js.map": "/silly-amy-matching-game/static/js/runtime-main.b23df796.js.map",
     "static/css/2.818011ed.chunk.css": "/silly-amy-matching-game/static/css/2.818011ed.chunk.css",
@@ -30,6 +30,6 @@
     "static/css/2.818011ed.chunk.css",
     "static/js/2.f932ff70.chunk.js",
     "static/css/main.b6df9086.chunk.css",
-    "static/js/main.f9c57ad1.chunk.js"
+    "static/js/main.22749d21.chunk.js"
   ]
 }
