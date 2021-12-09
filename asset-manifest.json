@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/silly-amy-matching-game/static/css/main.b6df9086.chunk.css",
-    "main.js": "/silly-amy-matching-game/static/js/main.35617ba6.chunk.js",
-    "main.js.map": "/silly-amy-matching-game/static/js/main.35617ba6.chunk.js.map",
+    "main.js": "/silly-amy-matching-game/static/js/main.8542dea5.chunk.js",
+    "main.js.map": "/silly-amy-matching-game/static/js/main.8542dea5.chunk.js.map",
     "runtime-main.js": "/silly-amy-matching-game/static/js/runtime-main.b23df796.js",
     "runtime-main.js.map": "/silly-amy-matching-game/static/js/runtime-main.b23df796.js.map",
     "static/css/2.818011ed.chunk.css": "/silly-amy-matching-game/static/css/2.818011ed.chunk.css",
-    "static/js/2.b4099a37.chunk.js": "/silly-amy-matching-game/static/js/2.b4099a37.chunk.js",
-    "static/js/2.b4099a37.chunk.js.map": "/silly-amy-matching-game/static/js/2.b4099a37.chunk.js.map",
+    "static/js/2.787eca3e.chunk.js": "/silly-amy-matching-game/static/js/2.787eca3e.chunk.js",
+    "static/js/2.787eca3e.chunk.js.map": "/silly-amy-matching-game/static/js/2.787eca3e.chunk.js.map",
     "static/js/3.0d788b1d.chunk.js": "/silly-amy-matching-game/static/js/3.0d788b1d.chunk.js",
     "static/js/3.0d788b1d.chunk.js.map": "/silly-amy-matching-game/static/js/3.0d788b1d.chunk.js.map",
     "index.html": "/silly-amy-matching-game/index.html",
     "static/css/2.818011ed.chunk.css.map": "/silly-amy-matching-game/static/css/2.818011ed.chunk.css.map",
     "static/css/main.b6df9086.chunk.css.map": "/silly-amy-matching-game/static/css/main.b6df9086.chunk.css.map",
-    "static/js/2.b4099a37.chunk.js.LICENSE.txt": "/silly-amy-matching-game/static/js/2.b4099a37.chunk.js.LICENSE.txt",
+    "static/js/2.787eca3e.chunk.js.LICENSE.txt": "/silly-amy-matching-game/static/js/2.787eca3e.chunk.js.LICENSE.txt",
     "static/media/cat2.a8f08e61.jpeg": "/silly-amy-matching-game/static/media/cat2.a8f08e61.jpeg",
     "static/media/cat3.1945a1d1.jpeg": "/silly-amy-matching-game/static/media/cat3.1945a1d1.jpeg",
     "static/media/cat6.44b3e7cc.jpeg": "/silly-amy-matching-game/static/media/cat6.44b3e7cc.jpeg",
@@ -28,8 +28,8 @@
   "entrypoints": [
     "static/js/runtime-main.b23df796.js",
     "static/css/2.818011ed.chunk.css",
-    "static/js/2.b4099a37.chunk.js",
+    "static/js/2.787eca3e.chunk.js",
     "static/css/main.b6df9086.chunk.css",
-    "static/js/main.35617ba6.chunk.js"
+    "static/js/main.8542dea5.chunk.js"
   ]
 }
