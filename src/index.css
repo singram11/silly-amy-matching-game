@@ -80,3 +80,8 @@ img.front {
     border-radius: 6px;
     background-color: rgb(205, 205, 205, 0.5);
 }
+
+a {
+    text-decoration: none !important;
+    color: #fff !important;
+}
