@@ -1,17 +1,15 @@
-import images from "./imageData"
-import dogs from "./dogDeck"
-import Gameboard from "./Gameboard"
+import images from './imageData';
+// Using dogs file
+import dogs from './dogDeck';
+import Gameboard from './Gameboard';
 
-function ShuffleDeck(props){
+function ShuffleDeck(props) {
+    let shuffledDeck = dogs //images
+        .map((value) => ({ value, sort: Math.random() }))
+        .sort((a, b) => a.sort - b.sort)
+        .map(({ value }) => value);
 
-
-    let shuffledDeck = dogs     //images
-            .map((value) => ({value, sort: Math.random() }))
-            .sort((a,b) => a.sort - b.sort)
-            .map(({value}) => value)
-
-    
-    return <Gameboard deck={shuffledDeck}/>
-};
+    return <Gameboard deck={shuffledDeck} />;
+}
 
 export default ShuffleDeck;
