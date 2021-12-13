@@ -10,9 +10,6 @@ function Card(props) {
     const divClasses = `${props.className} catCard ${active}`;
     const frontClasses = 'side front';
     const backClasses = 'side back';
-    // const frontStyle = {
-    //     backgroundImage: `url(${questionMark})`
-    // }
 
     return (
         <Col className='mb-3 card-col'>
