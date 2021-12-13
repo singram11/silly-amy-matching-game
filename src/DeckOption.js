@@ -4,11 +4,12 @@ import React, { useState, useEffect } from 'react';
 function DeckOption(props) {
     const deckOption = props.name;
     const setDeckOption = props.setDeckOption;
+    const deckImages = props.images;
 
     const [selected, setSelected] = useState(false);
 
     function changeDeckSelect() {
-        setDeckOption(deckOption);
+        setDeckOption(deckImages);
         console.log('change deck selection');
         setSelected(true);
     }

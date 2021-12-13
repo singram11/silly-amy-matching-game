@@ -8,7 +8,7 @@ function ShuffleDeck(props) {
 
     console.log(deck);
 
-    let shuffledDeck = dogs //images
+    let shuffledDeck = deck //images
         .map((value) => ({ value, sort: Math.random() }))
         .sort((a, b) => a.sort - b.sort)
         .map(({ value }) => value);

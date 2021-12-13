@@ -1,17 +1,23 @@
 import { Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import DeckOption from './DeckOption';
+import cats from './catDeck';
+import dogs from './dogDeck';
 
 function DeckOptionsSection(props) {
     const setDeckOption = props.setDeckOption;
 
-    const deckOptions = ['cats', 'dogs'];
+    const deckOptions = [
+        ['cats', cats],
+        ['dogs', dogs],
+    ];
 
     let optionsArr = deckOptions.map((option) => {
         const deckOption = (
             <DeckOption
-                key={option}
-                name={option}
+                key={option[0]}
+                name={option[0]}
+                images={option[1]}
                 setDeckOption={setDeckOption}
             />
         );

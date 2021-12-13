@@ -3,10 +3,12 @@ import GameControls from './GameControls';
 import ShuffleDeck from './ShuffleDeck';
 
 function Game(props) {
+    const deck = props.deck;
+    console.log(deck);
     return (
         <Container>
             <GameControls />
-            <ShuffleDeck deck={props.deck} />
+            <ShuffleDeck deck={deck} />
         </Container>
     );
 }
