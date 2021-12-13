@@ -8,7 +8,8 @@ import DeckOptionsSection from './DeckOptionsSection';
 
 function App() {
     // Global State
-    const [deckOption, setDeckOption] = useState('');
+    const [deckOption, setDeckOption] = useState('cats');
+    console.log(deckOption);
 
     return (
         <div className='App'>

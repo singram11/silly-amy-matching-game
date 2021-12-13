@@ -1,18 +1,14 @@
-
 import Container from 'react-bootstrap/Container';
 import GameControls from './GameControls';
-import ShuffleDeck from './ShuffleDeck'
-import { useEffect, useState } from 'react';
+import ShuffleDeck from './ShuffleDeck';
 
-function Game(props){
-
-    // const [restartGame, setRestartGame] = useState(false)
-
-    // useEffect(()=> {
-    //     console.log("re-rendered") 
-    // }, [restartGame])
-
-    return <Container><GameControls /><ShuffleDeck/> </Container>
+function Game(props) {
+    return (
+        <Container>
+            <GameControls />
+            <ShuffleDeck deck={props.deck} />
+        </Container>
+    );
 }
 
 export default Game;

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import images from './imageData';
+import cats from './catDeck';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Card from './Card';
